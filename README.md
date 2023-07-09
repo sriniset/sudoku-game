@@ -11,4 +11,4 @@ Backspace - Clear board
 
 Space - Solve board, at any point
 
-H - toggle help function. Will color number green if valid, red if not valid. Shows all valid values for cell at bottom of window
+H - Toggle help function. Will color number green if valid, red if not valid. Shows all valid values for cell at bottom of window
