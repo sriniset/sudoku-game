@@ -6,7 +6,7 @@ pygame.font.init()
 class Board:
 
     #the board object from the doku class
-    board = Doku(60)
+    board = Doku(65)
 
 
     #initializer
