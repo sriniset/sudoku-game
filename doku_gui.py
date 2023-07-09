@@ -149,11 +149,15 @@ class Box:
                 window.blit(text, (x + (space / 2 - text.get_width() / 2),
                                    y + (space / 2 - text.get_height() / 2)))
             if self.valid and self.value != 0:
-                text = font.render(str(self.value), 1, (0, 255, 0))
+                text = font.render(str(self.value), 1, (0, 0, 0))
+                if board.show_help:
+                    text = font.render(str(self.value), 1, (0, 255, 0))
                 window.blit(text, (x + (space / 2 - text.get_width() / 2),
                             y + (space / 2 - text.get_height() / 2)))
             elif not self.valid and self.value != 0:
-                text = font.render(str(self.value), 1, (255, 0, 0))
+                text = font.render(str(self.value), 1, (0, 0, 0))
+                if board.show_help:
+                    text = font.render(str(self.value), 1, (255, 0, 0))
                 window.blit(text, (x + (space / 2 - text.get_width() / 2),
                                    y + (space / 2 - text.get_height() / 2)))
 
